@@ -7,7 +7,7 @@ const getGroqAnswer = (input) => {
       messages: [
         {
           role: "user",
-          content: `Please proofread the following email for grammatical errors, spelling mistakes, and formatting issues. Make the email more formal if needed. Provide only the corrected version of the email. Here is the input: ${input}`,
+          content: `Please proofread the following email for grammatical errors, spelling mistakes, and formatting issues. Make the email more formal if needed. Provide only the corrected version of the email and do not generate own email in any case, only work with this input. Here is the input: ${input}`,
         },
       ],
       model: "llama3-groq-70b-8192-tool-use-preview",
