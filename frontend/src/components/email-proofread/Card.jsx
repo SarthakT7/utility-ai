@@ -12,7 +12,7 @@ const EmailCard = () => {
     return (
         <div onClick={handleClick}>
             <Card
-                imagePath={"public/proofread.jpeg"}
+                imagePath={"proofread.jpeg"}
                 imageHeight={"256"}
                 cardTitle={"The Email Polisher"}
                 cardDescription={"Elevate your emails with Email Polisher. Proofread and transform your messages into clear, professional, and formal communications, making every email you send polished and impressive."}

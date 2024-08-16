@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for frontend-utility-ai on 2024-08-12T03:21:51+05:30
+# fly.toml app configuration file generated for frontend-winter-violet-9303 on 2024-08-14T23:36:28+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'frontend-utility-ai'
-primary_region = 'lax'
+app = 'frontend-winter-violet-9303'
+primary_region = 'atl'
 
 [build]
 
@@ -17,16 +17,6 @@ primary_region = 'lax'
   processes = ['app']
 
 [[vm]]
-  memory = '512mb'
+  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-
-[experimental]
-  cmd = ["vite", "build"]
-
-[[statics]]
-  guest_path = "/public"
-  url_prefix = "/"
-  [[statics.routes]]
-  match = "/*"
-  file = "index.html"
