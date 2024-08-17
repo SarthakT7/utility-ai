@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./components/Home";
 import Email from './components/email-proofread/Email';
 import JsonGenerator from "./components/generate-json/JsonGenerator";
+import CheckGrammar from "./components/check-grammar/CheckGrammar";
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/email" element={<Email />} />
           <Route path="/generate-json" element={<JsonGenerator />} />
-
+          <Route path="/grammar-enhancer" element={<CheckGrammar />} />
 
         </Routes>
       </Router>
