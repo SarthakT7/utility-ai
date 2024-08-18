@@ -56,12 +56,12 @@ const CheckGrammar = () => {
         marginBottom: { xs: 2, md: 0 } 
       }}>
         <TextField
-          label="JSON-like Input"
+          label="Enter your paragraph"
           onChange={handleInputChange}
           fullWidth
           multiline
           rows={25}
-          placeholder='Paste here..'
+          placeholder='Your paragraph..'
           variant="outlined"
         />
       </Box>
