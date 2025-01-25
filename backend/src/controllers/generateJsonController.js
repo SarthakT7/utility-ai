@@ -10,7 +10,7 @@ const getGroqAnswer = (input) => {
           content: `Please generate plain json object out of this input. Provide only the json output and do not assume any data, only work with this input. Here is the input: ${input}`,
         },
       ],
-      model: "llama3-groq-70b-8192-tool-use-preview",
+      model: "llama-3.3-70b-versatile",
     });
 
     return response;
